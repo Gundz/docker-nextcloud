@@ -1,4 +1,4 @@
-FROM wonderfall/nextcloud
+FROM wonderfall/nextcloud:latest
 
 RUN	apk add php7-imagick \
     && echo "extension=imagick.so" > /php/conf.d/imagick.ini \
