@@ -1,4 +1,4 @@
-FROM suprovsky/nextcloud:17
+FROM suprovsky/nextcloud:18
 
 RUN	apk add php7-imagick \
     && echo "extension=imagick.so" > /php/conf.d/imagick.ini \
