@@ -1,8 +1,6 @@
 FROM wonderfall/nextcloud:19
 
 RUN	apk add php7-imagick \
-    && echo "extension=imagick.so" > /php/conf.d/imagick.ini \
-    && ln /usr/lib/php7/modules/imagick.so /usr/lib/php/extensions/no-debug-non-zts-20170718/imagick.so \
     && set -x \
     && addgroup -g 82 -S www-data \
     && adduser -u 82 -D -S -G www-data www-data \
