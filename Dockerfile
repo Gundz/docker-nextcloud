@@ -1,4 +1,4 @@
-FROM wonderfall/nextcloud:19
+FROM wonderfall/docker-nextcloud:20
 
 RUN	apk add php7-imagick \
     && set -x \
